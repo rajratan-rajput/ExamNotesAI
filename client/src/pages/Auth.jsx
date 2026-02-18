@@ -17,10 +17,17 @@ function Auth() {
       const User = response.user
       const name = User.displayName
       const email = User.email
-      const result = await axios.post(serverUrl + "/api/auth/google" , {name , email},{
-        withCredentials:true
-      })
-      dispatch(setUserData(result.data))
+     const result = await axios.post(
+  serverUrl + "/api/auth/google",
+  { name, email }
+);
+
+// ✅ SAVE TOKEN HERE
+localStorage.setItem("token", result.data.token);
+
+// ✅ Store user in Redux
+dispatch(setUserData(result.data.user));
+
     } catch (error) {
       console.log(error)
     }
