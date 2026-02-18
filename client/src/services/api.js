@@ -48,15 +48,16 @@
 
 
 import axios from "axios";
-import { serverUrl } from "../App";
+// import { serverUrl } from "../App";
 import { setUserData } from "../redux/userSlice";
 
 /*
   Create Axios instance
 */
 const API = axios.create({
-  baseURL: serverUrl,
+  baseURL: import.meta.env.VITE_BACKEND_URL,
 });
+
 
 /*
   Attach JWT token automatically to every request
