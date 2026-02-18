@@ -3,13 +3,13 @@ import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
+  apiKey: "AIzaSyAglvVbtSG0rpULRzNV__k_wUZYG-gS9sg",
   authDomain: "examnotesai-42452.firebaseapp.com",
-
-  projectId: "authexamnotes",
-  storageBucket: "authexamnotes.firebasestorage.app",
-  messagingSenderId: "198091553006",
-  appId: "1:198091553006:web:cd719d4ee1ebf391139bff"
+  projectId: "examnotesai-42452",
+  storageBucket: "examnotesai-42452.firebasestorage.app",
+  messagingSenderId: "837256428244",
+  appId: "1:837256428244:web:216a762da48f8b9f3ed941",
+  measurementId: "G-HKHGRE0DH5"
 };
 
 
